@@ -15,7 +15,7 @@ import java.text.SimpleDateFormat
 import java.util.Date
 import java.util.Locale
 
-//7f35a947e5b14761b39103c67acf2ca0
+
 class MainActivity : AppCompatActivity() {
 
     private  val binding : ActivityMainBinding by lazy {
@@ -71,8 +71,8 @@ class MainActivity : AppCompatActivity() {
                     val maxTemp = responseBody.main.temp_max
                     val minTemp = responseBody.main.temp_min
                     binding.temp.text = "$temperature °C"
-                    binding.minTemp.text = "$minTemp °C"
-                    binding.maxTemp.text = "$maxTemp °C"
+                    binding.minTemp.text = "Min Temp : $minTemp °C"
+                    binding.maxTemp.text = "Max Temp : $maxTemp °C"
                     binding.humidity.text = "$humidity %"
                     binding.windSpeed.text = "$windSpeed m/s"
                     binding.sunset.text = "${time(sunSet.toLong())}"
@@ -115,7 +115,7 @@ class MainActivity : AppCompatActivity() {
                 binding.lottieAnimationView.setAnimation(R.raw.sun)
             }
 
-            "Light Rain","Heavy rain","Moderate rain","Showers","Drizzle"->{
+            "Rain","Light Rain","Heavy rain","Moderate rain","Showers","Drizzle","Thunderstorm","Gusty winds"->{
                 binding.root.setBackgroundResource(R.drawable.rain_screen)
                 binding.lottieAnimationView.setAnimation(R.raw.rain)
             }
