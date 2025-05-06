@@ -10,7 +10,7 @@ An animated Kotlin-based Android application that fetches and displays real-time
 | Splash Screen | Sunny Screen || Rain Screen | Cloud Screen |
 |---------------|--------------|---------------|--------------|
 
-| ![splash](./SplashScreen.png) | ![sunny](./SunnyScreen.png) |![rain](./RainScreen.png) | ![cloud](./CloudScreen.png) |
+| ![splash](screenshots/SplashScreen.png) | ![sunny](screenshots/SunnyScreen.png) |![rain](screenshots/RainScreen.png) | ![cloud](screenshots/CloudScreen.png) |
 
 > Screen for 🌨️ Snow will be added soon!
 
